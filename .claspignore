@@ -1,0 +1,16 @@
+# Archivos que no deben subirse a Google Apps Script
+*.sql
+*.csv
+*.md
+*.txt
+
+# Archivos de configuración de herramientas locales
+.clasp.json
+.claspignore
+.git/**
+.gitignore
+node_modules/**
+
+# Mantener solo el manifiesto de Apps Script de los JSON
+*.json
+!appsscript.json

@@ -73,6 +73,17 @@ function testCapturaDeExcepcion() {
   }, 'Prueba de Acceso a Objeto Nulo');
 }
 
+/**
+ * Función de prueba que ejecuta la extracción e impresión de datos desde la BD
+ * protegida por el manejador central de excepciones.
+ */
+function testExtraccionBDControlada() {
+  ejecutarConManejoDeErrores(() => {
+    extraerEImprimirDatosDeBD();
+  }, 'Extracción e Impresión de Base de Datos MySQL');
+}
+
+
 
 function testSinExcepcion() {
   Logger.log('--- TEST 1: Probando captura sin try/catch directo ---');
